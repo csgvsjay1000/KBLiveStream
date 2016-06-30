@@ -129,17 +129,17 @@
         _startLiveButton.exclusiveTouch = YES;
         __weak typeof(self) _self = self;
         [_startLiveButton addBlockForControlEvents:UIControlEventTouchUpInside block:^(id sender) {
-//            _self.startLiveButton.selected = !_self.startLiveButton.selected;
-//            if(_self.startLiveButton.selected){
-//                [_self.startLiveButton setTitle:@"结束直播" forState:UIControlStateNormal];
-//                LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
-//                stream.url = @"rtmp://0fwc91.publish.z1.pili.qiniup.com/shutong/test1?key=0afbffdf";
-//                //stream.url = @"rtmp://daniulive.com:1935/live/stream2399";
-//                [_self.session startLive:stream];
-//            }else{
-//                [_self.startLiveButton setTitle:@"开始直播" forState:UIControlStateNormal];
-//                [_self.session stopLive];
-//            }
+            _self.startLiveButton.selected = !_self.startLiveButton.selected;
+            if(_self.startLiveButton.selected){
+                [_self.startLiveButton setTitle:@"结束直播" forState:UIControlStateNormal];
+                KBLiveStreamInfo *stream = [[KBLiveStreamInfo alloc] init];
+                stream.url = @"rtmp://0fwc91.publish.z1.pili.qiniup.com/shutong/test1?key=0afbffdf";
+                //stream.url = @"rtmp://daniulive.com:1935/live/stream2399";
+                [_self.session startLive:stream];
+            }else{
+                [_self.startLiveButton setTitle:@"开始直播" forState:UIControlStateNormal];
+                [_self.session stopLive];
+            }
         }];
     }
     return _startLiveButton;

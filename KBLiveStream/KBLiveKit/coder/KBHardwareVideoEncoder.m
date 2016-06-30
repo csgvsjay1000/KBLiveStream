@@ -86,7 +86,7 @@
 #pragma mark -- VideoCallBack
 static void VideoCompressonOutputCallback(void *VTref, void *VTFrameRef, OSStatus status, VTEncodeInfoFlags infoFlags, CMSampleBufferRef sampleBuffer){
     
-    NSLog(@"VideoCompressonOutputCallback");
+//    NSLog(@"VideoCompressonOutputCallback");
     if (!sampleBuffer) {
         return;
     }

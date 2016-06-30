@@ -10,5 +10,8 @@
 #define KBLiveKit_h
 
 #import "KBLiveSession.h"
+#import "KBLiveStreamInfo.h"
+#import "KBLiveVideoConfig.h"
+
 
 #endif /* KBLiveKit_h */

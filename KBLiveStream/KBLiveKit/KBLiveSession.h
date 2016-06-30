@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "KBLiveVideoConfig.h"
+#import "KBLiveStreamInfo.h"
 
 @interface KBLiveSession : NSObject
 
@@ -18,5 +19,11 @@
 -(instancetype)init UNAVAILABLE_ATTRIBUTE;
 
 -(instancetype)initWithVideoConfig:(KBLiveVideoConfig *)videoConfiguration;
+
+/** The start stream .*/
+- (void)startLive:(KBLiveStreamInfo*)streamInfo;
+
+/** The stop stream .*/
+- (void)stopLive;
 
 @end
