@@ -214,6 +214,7 @@
 		4C7AF4EF1D228B90003BD8F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7AF4ED1D228B90003BD8F4 /* LaunchScreen.storyboard */; };
 		4C7AF4FA1D228B90003BD8F4 /* KBLiveStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7AF4F91D228B90003BD8F4 /* KBLiveStreamTests.m */; };
 		4C7AF5051D228B90003BD8F4 /* KBLiveStreamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7AF5041D228B90003BD8F4 /* KBLiveStreamUITests.m */; };
+		4CBA28D51D2674E300CA7DDA /* KBStreamingBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA28D41D2674E300CA7DDA /* KBStreamingBuffer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -648,6 +649,8 @@
 		4C7AF5001D228B90003BD8F4 /* KBLiveStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KBLiveStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7AF5041D228B90003BD8F4 /* KBLiveStreamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBLiveStreamUITests.m; sourceTree = "<group>"; };
 		4C7AF5061D228B90003BD8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBA28D31D2674E300CA7DDA /* KBStreamingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBStreamingBuffer.h; sourceTree = "<group>"; };
+		4CBA28D41D2674E300CA7DDA /* KBStreamingBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBStreamingBuffer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1171,6 +1174,8 @@
 				4C5576F01D24B96C0099255B /* KBStreamSocket.h */,
 				4C5576F11D24B9920099255B /* KBStreamRtmpSocket.h */,
 				4C5576F21D24B9920099255B /* KBStreamRtmpSocket.m */,
+				4CBA28D31D2674E300CA7DDA /* KBStreamingBuffer.h */,
+				4CBA28D41D2674E300CA7DDA /* KBStreamingBuffer.m */,
 			);
 			path = publish;
 			sourceTree = "<group>";
@@ -1520,6 +1525,7 @@
 				4C5577091D24C2CA0099255B /* error.c in Sources */,
 				4C4F7B3C1D23A24000B2927E /* GPUImageSmoothToonFilter.m in Sources */,
 				4C4F7B171D23A24000B2927E /* GPUImageMotionDetector.m in Sources */,
+				4CBA28D51D2674E300CA7DDA /* KBStreamingBuffer.m in Sources */,
 				4C4F7B281D23A24000B2927E /* GPUImagePolarPixellateFilter.m in Sources */,
 				4C4F7ABC1D23A24000B2927E /* GPUImageAddBlendFilter.m in Sources */,
 				4C4F7AD71D23A24000B2927E /* GPUImageCrosshairGenerator.m in Sources */,
